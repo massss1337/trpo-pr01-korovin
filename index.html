@@ -7,11 +7,133 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-  </header>
+<header class="site-header">
+  <img src="images/logo.svg" alt="Логотип курса TRPO" width="180">
 
-  <main>
-  </main>
+  <nav aria-label="Основная навигация">
+    <a href="#about">О курсе</a>
+    <a href="#tracks">Направления</a>
+    <a href="#schedule">Расписание</a>
+    <a href="#signup">Регистрация</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h1>Курс по технологиям веб-разработки</h1>
+    <p>
+      Изучаем HTML, CSS, Git, формы, доступность
+      и инструменты разработчика.
+    </p>
+  </section>
+
+<section id="tracks">
+  <h2>Направления</h2>
+
+  <div class="cards">
+    <article class="card" id="track-1">
+      <h3>HTML</h3>
+      <p class="card-category">Основа</p>
+      <p>Структура и семантика документа</p>
+      <p>Значение: 8</p>
+    </article>
+    <article class="card" id="track-2">
+  <h3>CSS</h3>
+  <p class="card-category">Оформление</p>
+  <p>Стили и адаптивность</p>
+  <p>Значение: 9</p>
+</article>
+
+<article class="card" id="track-3">
+  <h3>Git</h3>
+  <p class="card-category">Инструменты</p>
+  <p>История изменений</p>
+  <p>Значение: 7</p>
+</article>
+
+<article class="card" id="track-4">
+  <h3>Forms</h3>
+  <p class="card-category">HTML</p>
+  <p>Пользовательский ввод</p>
+  <p>Значение: 6</p>
+</article>
+
+<article class="card" id="track-5">
+  <h3>Accessibility</h3>
+  <p class="card-category">Качество</p>
+  <p>Доступность интерфейса</p>
+  <p>Значение: 10</p>
+</article>
+
+<article class="card" id="track-6">
+  <h3>DevTools</h3>
+  <p class="card-category">Проверка</p>
+  <p>Исследование DOM и стилей</p>
+  <p>Значение: 8</p>
+</article>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Расписание</h2>
+
+  <table class="schedule-table">
+    <caption>Данные о направлениях курса</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Направление</th>
+        <th scope="col">Категория</th>
+        <th scope="col">Значение</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <th scope="row">HTML</th>
+        <td>Основа</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <th scope="row">CSS</th>
+        <td>Оформление</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <th scope="row">Git</th>
+        <td>Инструменты</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <th scope="row">Forms</th>
+        <td>HTML</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <th scope="row">Accessibility</th>
+        <td>Качество</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <th scope="row">DevTools</th>
+        <td>Проверка</td>
+        <td>8</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <section id="signup">
+    <h2>Регистрация</h2>
+  </section>
+</main>
 
   <footer>
   </footer>
