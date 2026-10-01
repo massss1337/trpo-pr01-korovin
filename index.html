@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="site-header">
+<header class="site-header container">
   <img src="images/logo.svg" alt="Логотип курса TRPO" width="180">
 
   <nav aria-label="Основная навигация">
@@ -18,13 +18,19 @@
   </nav>
 </header>
 
-<main>
-  <section id="about">
+<main class="container">
+    <section id="about">
     <h1>Курс по технологиям веб-разработки</h1>
     <p>
       Изучаем HTML, CSS, Git, формы, доступность
       и инструменты разработчика.
     </p>
+      <img
+    class="course-cover"
+    src="images/cover.svg"
+    alt="Иллюстрация веб-страницы с надписью HTML + CSS"
+    width="600"
+  >
   </section>
 
 <section id="tracks">
@@ -130,12 +136,80 @@
   </table>
 </section>
 
-  <section id="signup">
-    <h2>Регистрация</h2>
-  </section>
-</main>
+<section id="signup">
+  <h2>Регистрация</h2>
+  <p>Учебная форма: проверка ввода без сохранения заявки.</p>
 
-  <footer>
-  </footer>
+  <form class="signup-form" action="#signup" method="get">
+    <div class="form-field">
+      <label for="fullname">Имя (обязательно)</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        minlength="2"
+        maxlength="60"
+        autocomplete="name"
+        required
+      >
+    </div>
+
+    <div class="form-field">
+      <label for="email">Электронная почта (обязательно)</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <div class="form-field">
+      <label for="participants">
+        Количество участников — от 1 до 5 (обязательно)
+      </label>
+      <input
+        type="number"
+        id="participants"
+        name="participants"
+        min="1"
+        max="5"
+        step="1"
+        value="1"
+        required
+      >
+    </div>
+
+    <div class="form-field">
+      <label for="direction">Направление (обязательно)</label>
+      <select id="direction" name="direction" required>
+        <option value="">Выберите направление</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Git</option>
+        <option value="4">Forms</option>
+        <option value="5">Accessibility</option>
+        <option value="6">DevTools</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="message">Комментарий (до 500 символов)</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        maxlength="500"
+      ></textarea>
+    </div>
+
+    <button type="submit">Проверить форму</button>
+  </form>
+</section>
+</main>
+<footer class="site-footer container">
+  <p>Практическая работа №1. HTML и базовая CSS-разметка.</p>
+</footer>
 </body>
 </html>
